@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>导航</title>
+    <style type="text/css">
+        li{
+            list-style-type: none;
+            font-size:20px;
+            width: 200px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            float: left;
+        }
+        /*input[type="radio"]+*/
+        .first:hover{
+            background: #11278a;
+            font-size:30px;
+        }
+        a{
+            text-decoration: none;
+            text-align: center;
+            color: red;
+        }
+        a:hover{
+            color:white;
+        }
+        /*#second1,#second2,#second3,#second4,#second5,#second6,*/
+        .second{
+            /*margin-left: -2000px;*/
+            visibility: hidden;
+        }
+        .second:hover{
+            background: red;
+        }
+         .second li{
+             width: 100px;
+             height: 50px;
+             font-size: 20px;
+             margin-left: 60px;
+             margin-top: 0px;
+             line-height: 50px;;
+        }
+         .second li:hover{
+             background: dodgerblue;
+         }
+         .second a{
+             color: black;
+         }
+         .second a:hover{
+             color:white;
+         }
+        .first:hover .second{
+           /* margin-left: 0px;*/
+           visibility: visible;
+        }
+        #angular:hover .second4,#bs:hover .second5,#node:hover .second6{
+            margin-left: 0px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li id="html" class="first">
+            <a href="">HTML</a>
+            <ul class="second1 second">
+                <li><a href="">html的结构</a></li>
+                <li><a href="">html的标签</a></li>
+                <li><a href="">html5新增</a></li>
+            </ul>
+        </li>
+        <li id="css" class="first">
+            <a href="">CSS</a>
+            <ul class="second2 second" >
+                <li><a href="">CSS基础</a></li>
+                <li><a href="">CSS属性</a></li>
+                <li><a href="">DIV+CSS</a></li>
+            </ul>
+        </li>
+        <li id="js" class="first">
+            <a href="">JavaScript</a>
+            <ul class="second3 second">
+                <li><a href="">js基础入门</a></li>
+                <li><a href="">js进阶</a></li>
+            </ul>
+        </li>
+        <li id="angular" class="first">
+            <a href="">AngularJs</a>
+            <ul class="second4 second">
+                <li><a href="">基础学习</a></li>
+                <li><a href="">进阶</a></li>
+            </ul>
+        </li>
+        <li id="bs" class="first">
+            <a href="">BootStrap</a>
+                <ul class="second5 second">
+                    <li><a href="">了解框架</a></li>
+                    <li><a href="">进阶学习</a></li>
+                </ul>
+        </li>
+        <li id="node" class="first">
+            <a href="">NodeJS</a>
+            <ul class="second6 second">
+                <li><a href="">了解NodeJS</a></li>
+                <li><a href="">学习NodeJS</a></li>
+            </ul>
+        </li>
+    </ul>
+</body>
+<script type="text/javascript">
+
+
+</script>
+</html>
